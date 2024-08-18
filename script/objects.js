@@ -1,7 +1,7 @@
 let dishes  =  [
     {
         "kind": "Antipasti",
-        "image": "antipasto.webp",
+        "img": "./antipasto.webp",
         "allDishes": [
             {
                 "name": "Insalata Mista",
@@ -14,7 +14,7 @@ let dishes  =  [
                 "price": 6.50
            },
            {
-                "name": "Antipasti Sant'Aria",
+                "name": "Antipasto Sant'Aria",
                 "ingredients": "mit Schinken und Salami, verschiedene Käsesorten, Gemüse und Brot",
                 "price": 13.80
            },
@@ -27,7 +27,7 @@ let dishes  =  [
     },
     {
     "kind": "Pizza",
-    "image": "../making-pizza.webp",
+    "img": "making-pizza.webp",
     "allDishes": [
         {
             "name": "Pizza Magherita",
@@ -58,7 +58,7 @@ let dishes  =  [
     },
     {
     "kind":"Desserts",
-    "image": "img/dessert.webp",
+    "img": "dessert.webp",
     "allDishes": [
     {
         "name": "Tiramisu",

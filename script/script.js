@@ -2,7 +2,8 @@ function render() {
     let placeOfdishes = document.getElementById('placeOfdishes');
     placeOfdishes.innerHTML = '';
     for (let i = 0; i < dishes.length; i++) {
-        const titleDishes = dishes[i];
+        let titleDishes = dishes[i];
+
         let placeOfSingeDishes = `<div>`;
         for (let j = 0; j < titleDishes.allDishes.length; j++) {
             placeOfSingeDishes += `<div class="singleDishCard">
@@ -14,6 +15,7 @@ function render() {
         placeOfdishes.innerHTML += showDishes(titleDishes, i, placeOfSingeDishes);
     }      
 }
+
 
 
 function initalize(){
