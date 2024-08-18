@@ -1,0 +1,17 @@
+#basket_wrapper{
+    width: 300px;
+}
+
+.shopping-cart {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+#basket {
+    min-height: 513px;
+    position: sticky;
+    border: 1px solid #e7d8c5;
+    top: 0;
+    box-shadow:  0px 3px 10px 2px #e7d8c5;
+}

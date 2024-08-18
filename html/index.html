@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestellApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+AU+NSW:wght@100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/basket_wrapper.css">
+
+    <script src="../script/includeHeader.js"></script>
+    <script src="../script/objects.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../script/templates.js"></script>
+</head>
+<body onload="initalize()">
+
+    <div w3-include-html="../html/header.html"></div>
+    <img src="../img/magherita.jpg" alt="pizza" class="main-img">
+    <div class="headline-img">
+        <img src="../img/Santaria.jpg" alt="Logo Santaria" class="santaria">
+    </div>
+
+    <div class="headline-name">
+        <h1>Sant'Aria</h1>
+        <span class="evaluation">Bewertung (4.7 von 5 Sternen)</span>
+    </div>
+
+    <nav class="menu-bar">
+        <img src="../img/arrow.png" alt="arrow" class="arrow">
+        <span class="span-menu-bar">Antipasti</span>
+        <span class="span-menu-bar">Pizza</span>
+        <span class="span-menu-bar">Desserts</span>
+    </nav>  
+<div class="content_wrapper">  
+    <div id="placeOfdishes"></div>  
+    <div id="basket_wrapper">
+        <h3 class="shopping-cart">Warenkorb</h3>
+        <div id="basket"></div>
+    </div>  
+</div>    
+
+  
+    
+</body>
+</html>

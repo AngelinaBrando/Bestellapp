@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #C09766;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px 0 14px;
+}
+
+header img {
+    width: 180px;
+    object-fit: cover;
+}
+
+.menu-icon {
+    width: 35px;
+    color: white;
+}
+
