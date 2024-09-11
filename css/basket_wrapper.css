@@ -10,20 +10,18 @@
 }
 
 #basket {
-    min-height: 100%;
+    min-height: 100dvh;
     position: sticky;
     border: 1px solid #e7d8c5;
     top: 0;
     box-shadow:  0px 3px 10px 2px #e7d8c5;
-    padding: 0 7px 0 7px
+    padding: 0 7px 0 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .textEmptyShoppingCart{
     text-align: center;
 }
 
-#basket {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

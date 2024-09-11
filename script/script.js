@@ -3,18 +3,23 @@ let basketPrice = [];
 let basketAmount = [];
 let basketTotalSum = [];
 
-
-function render() {
-    let placeOfdishes = document.getElementById('placeOfdishes');
-    placeOfdishes.innerHTML = '';
+function renderKind(){
+    let placeOfDishes = document.getElementById('placeOfDishes');
+    placeOfDishes.innerHTML = '';
     for (let i = 0; i < dishes.length; i++) {
-        let allOfDishes = dishes[i];
-        placeOfdishes.innerHTML += showDishes(allOfDishes, i);
-    }      
+    let allDishes = dishes[i];
+    placeOfDishes.innerHTML += showKindHTML(i);
+       
+        for (let j = 0; j < allDishes.dish.length; j++) {       
+            placeOfDishes.innerHTML += showDishesHTML(allDishes, j);
+        }
+    }
 }
 
+
+
 function renderEmptyShoppingCart() {
-    document.getElementById('basket').innerHTML = /*html*/`
+    document.getElementById('basket').innerHTML = `
         <h3 class="shopping-cart">Warenkorb</h3>
         <span class="textEmptyShoppingCart"><b>Dein Warenkorb ist noch leer.</span></b>
         `;
@@ -40,27 +45,8 @@ function renderShoppingCart() {
     }
 }
 
-function addToShoppingCart(i, index) {
-    let key = Object.keys(dishes);
-
-    let foodToCart = dishes[key[index]][i].name;
-    let prcieToCart = dishes[key[index]][i].price;
-
-    if (basketFood.includes(foodToCart)) {
-        let i = basketFood.indexOf(foodToCart);
-        basketAmount[i]++;
-    } else {
-        basketFood.push(foodToCart);
-        basketPrice.push(prcieToCart);
-        basketAmount.push(1);
-    }
-renderShoppingCart();
-}
-
-
-
 function initalize(){
     includeHTML();
-    render()
+    renderKind();
     renderEmptyShoppingCart();
 }

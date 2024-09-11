@@ -1,18 +1,21 @@
-function showDishes(dishes, i) {
+function showKindHTML(i) {
     return `
-    <div id="dishesKind">
-    <div id="dishesimg${i}"class="dishesimg"></div>
-        <div>
-            <h3>${dishes.kind}</h3>
-        </div>
-            <div class="singleDishCard">
-                <div class="discriptionDish"><b>${dishes.name}</b>
-                    <p>${dishes.ingredients}</p>
-                    <p class="priceOfDish">${dishes.price} €</p></div>
-                    <div id="addButton"> <img src="../img/plus.png" class="addButton" onclick="addToShoppingCart(${i}})"></div>
-                </div>
+        <div id="dishesimg${i}"class="dishesimg"></div>
+        <h3>${dishes[i].kind}</h3>
+        <div id="placeOfSingleDishes"></div>`;
+}
+
+
+function showDishesHTML(allDishes, j) {
+    return `
+        <div class="singleDishCard">
+            <div class="DishCardLeft">
+                <b>${allDishes.dish[j].name}</b>
+                <p>${allDishes.dish[j].ingredients}</p>
+                <p class="priceOfDish">${allDishes.dish[j].price} €</p>
             </div>
-        `
+            <div class="dishCardRight"><img src="../img/plus.png" class="addButton"></div>
+        </div>`
 }
 
 function showShoppingCart(elementFood, elementAmount, elementPrice, sum, i) {
