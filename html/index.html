@@ -18,6 +18,7 @@
 </head>
 <body onload="initalize()">
 
+<div class="succsess d-none" id="succsess" onclick="finishDone()"></div>
 <div w3-include-html="../html/header.html"></div>
 
 
@@ -47,11 +48,28 @@
         </div>
     </div>
     
-        <div id="basket_wrapper">
-            <div id="basket"></div>
-        </div>    
+        <div id="basket_wrapper" class="basket_wrapper">
+            <div id="basket">
+                <button onclick="openCloseFullscreen" class="openCloseFullscreen" id="closeButton"><b>X</b></button>
+                <h2>Warenkorb</h2>
+
+                    <div id="basketempty" class="basketempty">
+                    <h4>Fülle deinen Warenkorb</h4>
+                    </div>
+
+                  <div class="costs" id="costs"></div>
+            </div>
+        </div>       
+    </div>    
 </div>
 
+<div id="bottom-basket-container" class="bottom-basket-container">
+              <div id="bottom-basket" class="bottom-basket" onclick="openCloseFullscreen()">
+                <h2 class="bottom-basket-headline">Warenkorb</h2>
+                <h2 class="bottom-basket-headline" id="bottom-basket-price"></h2>
+              </div>
+</div>
+<footer>Impressum | Datenschutz</footer>
   
     
 </body>
